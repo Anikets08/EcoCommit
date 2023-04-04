@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1096942460789",
+    "project_id": "ecocommit",
+    "storage_bucket": "ecocommit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096942460789:android:4ea3319c8f356a6d947d3c",
+        "android_client_info": {
+          "package_name": "com.example.ecocommit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096942460789-it7o9v7256ckcmd3ohvsilfo966vjbli.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtmNYXxwWKNlVxoz1PEzPw27yq3_LcEKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096942460789-it7o9v7256ckcmd3ohvsilfo966vjbli.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
