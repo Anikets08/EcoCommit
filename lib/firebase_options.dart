@@ -3,6 +3,7 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
@@ -49,21 +50,21 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCtmNYXxwWKNlVxoz1PEzPw27yq3_LcEKI',
-    appId: '1:1096942460789:android:4ea3319c8f356a6d947d3c',
-    messagingSenderId: '1096942460789',
-    projectId: 'ecocommit',
-    storageBucket: 'ecocommit.appspot.com',
+  static FirebaseOptions android = FirebaseOptions(
+    apiKey: dotenv.env['ANDROIDAPIKEY'].toString(),
+    appId: dotenv.env['ANDROIDAPPID'].toString(),
+    messagingSenderId: dotenv.env['MESSAGINGSENDERID'].toString(),
+    projectId: dotenv.env['PROJECTID'].toString(),
+    storageBucket: dotenv.env['STORAGEBUCKET'].toString(),
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDINUXEyRbkMmpZjqWJgMmZL8oRx5ebHAo',
-    appId: '1:1096942460789:ios:238ce18970e4f05c947d3c',
-    messagingSenderId: '1096942460789',
-    projectId: 'ecocommit',
-    storageBucket: 'ecocommit.appspot.com',
-    iosClientId: '1096942460789-06qo6h24jnh9occt63uc2amqaie17l2f.apps.googleusercontent.com',
-    iosBundleId: 'com.example.ecocommit',
+  static FirebaseOptions ios = FirebaseOptions(
+    apiKey: dotenv.env['IOSAPIKEY'].toString(),
+    appId: dotenv.env['IOSAPPID'].toString(),
+    messagingSenderId: dotenv.env['MESSAGINGSENDERID'].toString(),
+    projectId: dotenv.env['PROJECTID'].toString(),
+    storageBucket: dotenv.env['STORAGEBUCKET'].toString(),
+    iosClientId: dotenv.env['IOSCLIENTID'].toString(),
+    iosBundleId: dotenv.env['IOSBUNDLEID'].toString(),
   );
 }
